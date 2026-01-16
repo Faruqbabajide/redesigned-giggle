@@ -7,7 +7,9 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate",
+    "postinstall": "npx prisma generate || true",
+    "build": "npx prisma migrate deploy || true"
   },
   "keywords": [],
   "author": "",

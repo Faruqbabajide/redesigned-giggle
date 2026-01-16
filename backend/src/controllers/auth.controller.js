@@ -1,8 +1,8 @@
 const bcrypt = require("bcryptjs");
 const prisma = require("../prisma");
-const { generateOTP } = require("../utils/otp");
-const { sendMail } = require("../utils/mailer");
-const { signAccessToken, signRefreshToken } = require("../utils/jwt");
+const { generateOTP } = require("../Utils/otp");
+const { sendMail } = require("../Utils/mailer");
+const { signAccessToken, signRefreshToken } = require("../Utils/jwt");
 const jwt = require("jsonwebtoken");
 
 /* ===== REGISTER ===== */
